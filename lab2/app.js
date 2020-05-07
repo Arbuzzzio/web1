@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
      	document.body.style.backgroundColor = 'blue'
      	   let list = document.createElement('ol')
 		    list.setAttribute("style", "list-style: upper-latin;")
+		    list.start = 3;
 		    const numbers = 15
 		    let count = 0
 

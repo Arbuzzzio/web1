@@ -6,6 +6,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
  	setTimeout(() => {
      	document.body.style.backgroundColor = 'blue'
+     	   let list = document.createElement('ol')
+		    list.setAttribute("style", "list-style: upper-latin;")
+		    const numbers = 15
+		    let count = 0
+
+		    setTimeout(() => {
+		    setInterval(() => {
+		        if (count < numbers) {
+		            count++
+		            let li = document.createElement('li')
+		            li.innerText = count
+		            list.appendChild(li)
+		            document.body.appendChild(list)
+		        }
+		    }, 1000)
+
+
+
+		}, 2000)
     }, 3000);   
 }
 )
